@@ -1,6 +1,6 @@
 import  { useState } from "react";
 
-function Task3() {
+const Task3 =()=>{
   const [task, setTask] = useState("");
   const [tasks, setTasks] = useState([]);
 
