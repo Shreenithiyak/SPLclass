@@ -1,13 +1,10 @@
 
-
 import Task3 from './components/Task3'
 
 const App = () => {
   return (
     <>
-    <Task3/>
-
-  
+    <Task3/>  
     </>
   )
 }

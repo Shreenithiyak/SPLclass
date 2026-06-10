@@ -9,7 +9,7 @@ const Task2 = () => {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const response = await axios.get("https://jsonplaceholder.typicode.com/users");
+        const response = await axios.get("https://jsonplaceholder.typicode.com/users?_limit=3");
         setUsers(response.data);
         setLoading(false);
       } catch (error) {
@@ -18,7 +18,6 @@ const Task2 = () => {
         setLoading(false);
       }
     };
-
     fetchUsers();
   }, []);
 
@@ -33,7 +32,6 @@ const Task2 = () => {
   return (
     <div>
       <h1>User List</h1>
-
       {users.map((user) => (
         <div key={user.id}>
           <h3>Name: {user.name}</h3>

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Task1 from "./Task1";
 import Task2 from "./Task2";
+import Task4 from "./Task4";
 
 
 const Task3 = () => {
@@ -19,6 +20,7 @@ const[toggle,setToggle]=useState(false);
      <button onClick={handleClick}>click</button>
      <Task1/>
      <Task2/>
+     <Task4/>
     </div>
     </>
   )
