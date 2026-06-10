@@ -2,6 +2,7 @@ import { useState } from "react";
 import Task1 from "./Task1";
 import Task2 from "./Task2";
 import Task4 from "./Task4";
+import Task5 from "./Task5";
 
 
 const Task3 = () => {
@@ -19,6 +20,7 @@ const[toggle,setToggle]=useState(false);
     <h1>{toggle ? "Dark Mode" : "Light Mode"}</h1>
      <button onClick={handleClick}>click</button>
      <Task1/>
+     <Task5/>
      <Task2/>
      <Task4/>
     </div>
