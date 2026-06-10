@@ -13,7 +13,7 @@ const[toggle,setToggle]=useState(false);
     <>
     
     <div style={{backgroundColor:toggle?"blue":"white",
-            color: toggle ? "black" : "white",
+            color: toggle ? "white" : "black",
     }}>
     <h1>{toggle ? "Dark Mode" : "Light Mode"}</h1>
      <button onClick={handleClick}>click</button>
