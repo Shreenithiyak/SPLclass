@@ -1,17 +1,17 @@
 import { useEffect, useRef, useState } from "react";
 
 const Task5 = () => {
-  const [search, setSearch] = useState("");
-  const previousSearch = useRef("");
-  const [previousDisplay, setPreviousDisplay] = useState("");
+  const [search, setSearch] = useState("")
+  const  previoussearch = useRef("")
+  const[previousDisplay,setPreviousDisplay]= useState("")
 
-  useEffect(() => {
-    setPreviousDisplay(previousSearch.current);
-    previousSearch.current = search;
-  }, [search]);
+
+useEffect(()=>{
+    setPreviousDisplay(previoussearch.current)
+      previoussearch.current=search;
+},[search]);
 
   const handleSearch = (e) => {
-    previousSearch.current = search;
     setSearch(e.target.value);
   };
 
