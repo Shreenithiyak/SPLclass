@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Cards</title>
+</head>
+<body>
+
+  <h1>Products</h1>
+
+  <div class="container" id="productContainer"></div>
+
+  <script>
+    const products = [
+      { id: 1, name: "Laptop", price: 50000 },
+      { id: 2, name: "Mobile", price: 20000 },
+      { id: 3, name: "Keyboard", price: 1500 }
+    ];
+
+    const container = document.getElementById("productContainer");
+
+    products.map((product) => {
+      container.innerHTML += `
+        <div class="card">
+          <h3>${product.name}</h3>
+          <p>Price: ₹${product.price}</p>
+        </div>
+      `;
+    });
+  </script>
+
+</body>
+</html>
+
+<!-- Task 3: Product Card Rendering (map()) 
+const products = [ { id: 1, name: "Laptop", price: 50000 }, 
+{ id: 2, name: "Mobile", price: 20000 }, { id: 3, name: "Keyboard", price: 1500 } ];
+ Task: Display all products in separate cards. Show Product Name and Price. Interview Focus: map() -->
+
